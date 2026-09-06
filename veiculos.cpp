@@ -58,8 +58,20 @@ void exibirDados(const Carro& c)
 void acelerar(Moto m)
 {
 
-cout << "A" << m.modelo << "Esta acelerando" << endl;
+cout << "A " << m.modelo << "Esta acelerando" << endl;
 
+}
+void frear(Moto m)
+{
+    cout << "A" << m.modelo << "Esta freando" << endl;
+}
+void exibirDados(const Moto& m)
+{
+    cout << "\nMarca: " << m.marca
+         << "\nModelo: " << m.modelo
+         << "\nAno: " << m.ano
+         << "\nPreco: R$" << m.preco
+         << "\nCilindradas: " << m.cilindradas << "\n" << endl;
 }
 int main()
 {
@@ -79,11 +91,14 @@ int main()
     int opcao;
     do
     {
-        cout << "\n=== Menu do " << meuCarro.marca << " " << meuCarro.modelo << " ===" << endl;
-        cout << "1 - Ligar" << endl;
-        cout << "2 - Desligar" << endl;
+        cout << "\n=== Menu Veiculos ===" << endl;
+        cout << "1 - Ligar o carro" << endl;
+        cout << "2 - Desligar o carro" << endl;
         cout << "3 - Buzinar" << endl;
         cout << "4 - Exibir dados" << endl;
+        cout << "5 - Acelerar com a moto" << endl;
+        cout << "6 - Frear com a moto" << endl;
+        cout << "7 - Exibir dados da moto" << endl;
         cout << "0 - Sair" << endl;
         cout << "Escolha: ";
         cin >> opcao;
@@ -97,6 +112,9 @@ int main()
                 else cout << "Carro desligado, nao pode buzinar!" << endl;
                 break;
             case 4: exibirDados(meuCarro); break;
+            case 5: acelerar(minhamoto); break;
+            case 6: frear(minhamoto); break;
+            case 7: exibirDados(minhamoto); break;
             case 0: cout << "Saindo..." << endl; break;
             default: cout << "Opcao invalida!" << endl;
         }
