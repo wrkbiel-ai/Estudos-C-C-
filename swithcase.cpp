@@ -1,12 +1,13 @@
+// Biblioteca que inclue: <iostream> <vector> <string>
 #include <bits/stdc++.h>
-using namespace std;
+using namespace std; // Remove a necessida de utilizar std::cout std::cin std::endl
 int main()
 {
     int opcao;
     double num1;
     double num2;
     int repetir;
-    do
+    do // Vai executar pelo menos uma vez
     {
         cout << "=== CALCULADORA ===" << endl;
         cout << "1- Somar" << endl;
@@ -55,7 +56,7 @@ int main()
             cin >> repetir;
             
         
-    } while (repetir !=0 );
+    } while (repetir !=0 ); //Condicao de repeticão
     cout << "Obrigado por usar nossa calculadora!";
     return 0;
 }
