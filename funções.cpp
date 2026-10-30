@@ -18,7 +18,6 @@ return qd * qd;
 void mostrarDadosdb (int numero) {
 
 cout << "O dobro do seu numero e: " << dobro(numero) << endl; 
-cout << "O dobro do seu numero e: " << dobro(numero) << endl; 
 }
 
 void mostrarDadoqd (int n3) {
