@@ -5,24 +5,45 @@ int somar(int a, int b)
 
     return a + b;
 }
+int somar (int c, int d, int e) {
+
+return c + d + e;
+}
+double somar (double x, double y, double z) {
+return x + y + z;
+
+}
 int dobro(int n1)
 {
 
     return n1 * 2;
 }
+int calcular (int n2, int n3) {
 
-int quadrado (int qd) {
-
-return qd * qd;
+return n2 * n3;
 }
-void mostrarDadosdb (int numero) {
+int calcular (int n2, int n3, int n4) {
 
-cout << "O dobro do seu numero e: " << dobro(numero) << endl; 
-cout << "O dobro do seu numero e: " << dobro(numero) << endl; 
+return n2 + n3 + n4;
+}
+double calcular (double n2, double n3) {
+
+return n2 / n3;
+}
+int quadrado(int qd)
+{
+
+    return qd * qd;
+}
+void mostrarDadosdb(int numero)
+{
+
+    cout << "O dobro do seu numero e: " << dobro(numero) << endl;
 }
 
-void mostrarDadoqd (int n3) {
-cout << "Seu numero ao quadrado eh: " << quadrado(n3) << endl;
+void mostrarDadoqd(int n3)
+{
+    cout << "Seu numero ao quadrado eh: " << quadrado(n3) << endl;
 }
 int ehpar(int a)
 {
@@ -66,7 +87,7 @@ void saudacao(string nome, int idade)
 
 int main()
 {
-    /*
+    
     int par;
 
     par = ehpar(3);
@@ -82,8 +103,8 @@ int main()
 
         cout << "Seu numero eh impar";
     }
-        */
-    /*
+        
+    
     int num;
     num = classificar (3);
 
@@ -102,8 +123,16 @@ int main()
     cout << "Seu numero e menor que zero";
 
     }
-    */
+    
     mostrarDadosdb(6);
     mostrarDadoqd(4);
+    
+
+    cout << somar(5, 10) << endl;
+    cout << somar(5, 10, 15) << endl;
+    cout << somar(2.50, 5.50, 7.50) << endl;
+    cout << calcular(5, 3) << endl; 
+    cout << calcular(5, 10, 15) << endl;
+    cout << calcular(10.00, 2.00) << endl;
     return 0;
 }
