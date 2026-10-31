@@ -24,6 +24,7 @@ return n2 * n3;
 }
 int calcular (int n2, int n3, int n4) {
 
+<<<<<<< HEAD
 return n2 + n3 + n4;
 }
 double calcular (double n2, double n3) {
@@ -39,6 +40,9 @@ void mostrarDadosdb(int numero)
 {
 
     cout << "O dobro do seu numero e: " << dobro(numero) << endl;
+=======
+cout << "O dobro do seu numero e: " << dobro(numero) << endl; 
+>>>>>>> 78383d09a06eae3cf617b403714a769580f353fd
 }
 
 void mostrarDadoqd(int n3)
