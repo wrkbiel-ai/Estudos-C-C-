@@ -5,31 +5,34 @@ int somar(int a, int b)
 
     return a + b;
 }
-int somar (int c, int d, int e) {
+int somar(int c, int d, int e)
+{
 
-return c + d + e;
+    return c + d + e;
 }
-double somar (double x, double y, double z) {
-return x + y + z;
-
+double somar(double x, double y, double z)
+{
+    return x + y + z;
 }
 int dobro(int n1)
 {
 
     return n1 * 2;
 }
-int calcular (int n2, int n3) {
+int calcular(int n2, int n3)
+{
 
-return n2 * n3;
+    return n2 * n3;
 }
-int calcular (int n2, int n3, int n4) {
+int calcular(int n2, int n3, int n4)
+{
 
-<<<<<<< HEAD
-return n2 + n3 + n4;
+    return n2 + n3 + n4;
 }
-double calcular (double n2, double n3) {
+double calcular(double n2, double n3)
+{
 
-return n2 / n3;
+    return n2 / n3;
 }
 int quadrado(int qd)
 {
@@ -88,7 +91,7 @@ void saudacao(string nome, int idade)
 
 int main()
 {
-    
+
     int par;
 
     par = ehpar(3);
@@ -104,35 +107,33 @@ int main()
 
         cout << "Seu numero eh impar";
     }
-        
-    
+
     int num;
-    num = classificar (3);
+    num = classificar(3);
 
-    if (num == 1) {
+    if (num == 1)
+    {
 
-    cout << "Seu numero e maior que zero";
+        cout << "Seu numero e maior que zero";
     }
 
-    else if (num == 0) {
+    else if (num == 0)
+    {
 
-    cout << "Seu numero e igual que zero";
-
+        cout << "Seu numero e igual que zero";
     }
-    else {
+    else
+    {
 
-    cout << "Seu numero e menor que zero";
-
+        cout << "Seu numero e menor que zero";
     }
-    
     mostrarDadosdb(6);
     mostrarDadoqd(4);
-    
 
     cout << somar(5, 10) << endl;
     cout << somar(5, 10, 15) << endl;
     cout << somar(2.50, 5.50, 7.50) << endl;
-    cout << calcular(5, 3) << endl; 
+    cout << calcular(5, 3) << endl;
     cout << calcular(5, 10, 15) << endl;
     cout << calcular(10.00, 2.00) << endl;
     return 0;

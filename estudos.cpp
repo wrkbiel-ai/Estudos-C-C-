@@ -1,55 +1,57 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
 struct Produto {
     string nome;
     double preco;
-    int codvef;
-    string fornecedor;
 };
 
 int main() {
 
     int opcao;
-    Produto p1;
+
+    vector<Produto> produtos;
 
     do {
 
         cout << "\nCadastro de produtos!" << endl;
-        cout << "O que deseja fazer?" << endl;
         cout << "1 - Cadastrar produto" << endl;
-        cout << "2 - Sair" << endl;
+        cout << "2 - Listar produtos" << endl;
+        cout << "3- Sair";
         cout << "Opcao: ";
 
         cin >> opcao;
 
         if (opcao == 1) {
 
+            Produto novoProduto;
+
             cout << "Digite o nome do produto: ";
+            getline(cin >> ws, novoProduto.nome);
 
-            getline(cin >> ws, p1.nome);
+            cout << "Digite o preco: ";
+            cin >> novoProduto.preco;
 
-            cout << "Digite o preco do produto: ";
-            cin >> p1.preco;
+            produtos.push_back(novoProduto);
 
-            cout << "Digite a data de validade: ";
-            cin >> p1.codvef;
-
-            cout << "Digite o nome do fornecedor: ";
-            getline(cin >> ws, p1.fornecedor);
-
-            cout << "\nProduto cadastrado com sucesso!" << endl;
-            cout << "Nome: " << p1.nome << endl;
-            cout << "Preco: R$ " << p1.preco << endl;
-            cout << "Codigo de verificacao: " << p1.codvef << endl;
-            cout << "Fornecedor: " << p1.fornecedor << endl;
+            cout << "Produto cadastrado!" << endl;
         }
+        else if (opcao == 2) {
 
-    } while (opcao != 2);
+      for (int i=0; i < produtos.size(); i++) {
+        cout << "\nProduto " << i + 1 << endl;
+                cout << "Nome: " << produtos[i].nome << endl;
+                cout << "Preco: R$ " << produtos[i].preco << endl;
 
-    cout << "Obrigado por usar o software!" << endl;
+      }
+    }
+
+    } while (opcao != 3);
+
+    cout << "Programa encerrado!" << endl;
 
     return 0;
 }

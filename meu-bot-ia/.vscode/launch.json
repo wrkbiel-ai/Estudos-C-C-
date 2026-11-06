@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Executar Meu Bot no terminal",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/meu-bot-ia/build/Release/meu_bot.exe",
+            "args": [
+                "${workspaceFolder}/meu-bot-ia/model.gguf"
+            ],
+            "cwd": "${workspaceFolder}/meu-bot-ia",
+            "externalConsole": true,
+            "preLaunchTask": "CMake: compilar meu_bot",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${workspaceFolder}/meu-bot-ia/build/bin/Release;${env:PATH}"
+                }
+            ]
+        }
+    ]
+}
