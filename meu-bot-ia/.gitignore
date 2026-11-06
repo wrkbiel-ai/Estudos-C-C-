@@ -1,7 +1,0 @@
-output/
-*.exe
-*.o
-*.obj
-*.log
-.env
-.env.*

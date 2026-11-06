@@ -1,2 +1,7 @@
 
 /meu-bot-ia/build/
+
+# Arquivos ignorados
+/output/
+/meu-bot-ia/
+*.exe
