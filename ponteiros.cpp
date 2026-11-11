@@ -34,24 +34,42 @@ void trocarvalores(int *ptr1, int *ptr2)
     *ptr1 = 50;
     *ptr2 = 10;
 }
-void aumentar (int *p){ 
-*p = *p + 20; 
-*p = *p * 2; 
-
-
-
+void aumentar(int *p)
+{
+    *p = *p + 20;
+    *p = *p * 2;
 }
 
-void desconto(int *p) {
-*p = *p - 15;
-*p = *p /2 ;
-
+void desconto(int *p)
+{
+    *p = *p - 15;
+    *p = *p / 2;
 }
-void modificar (int *p1, int *p2) {
-*p1 = *p1 +10;
-*p2 = *p2 * 3;
-*p2 = *p2 + *p1;
+void modificar(int *p1, int *p2)
+{
+    *p1 = *p1 + 10;
+    *p2 = *p2 * 3;
+    *p2 = *p2 + *p1;
+}
+void atualizar(int *p1, int *p2, int *p3)
+{
 
+    *p2 = *p1 + *p2;
+    *p3 = *p3 * 2;
+    *p2 = *p2 - *p3;
+}
+void calcular(int *p1, int *p2)
+{
+    *p1 = *p1 * 2;
+    *p2 = *p2 + 15;
+    *p2 = *p2 + *p1;
+}
+void att(int *p1, int *p2, int *p3) {
+*p1 = *p1 * 2; 
+*p3 = *p3 + 10;
+*p2 = *p2 * *p3;
+*p2 = *p2 - *p1;
+*p3 = *p3 + *p2;
 }
 int main()
 {
@@ -99,43 +117,52 @@ int main()
     cout << nume1 << endl;
     cout << nume2 << endl;
     */
-/*
-    int idade = 22;
-    int *ptr = &idade;
-    *ptr = *ptr + 8;
-    cout << idade << endl;
+    /*
+        int idade = 22;
+        int *ptr = &idade;
+        *ptr = *ptr + 8;
+        cout << idade << endl;
 
-    int numero = 15;
-    int *ptro = &numero;
-    *ptro = *ptro + 5;
-    *ptro = *ptro * 3;
-    *ptro = *ptro - 10;
-    cout << *ptro << endl;
-    cout << ptro;
-     
-    int numero1 = 10;
-    int numero2 = 15;
-    int *ptro0 = &numero1;
-    int *ptro1 = &numero2;
-    *ptro0 = *ptro0 + *ptro1;
-    *ptro1 = *ptro1 * 2;
-    cout << *ptro0 << endl;
-    cout << *ptro1 << endl;
-    
+        int numero = 15;
+        int *ptro = &numero;
+        *ptro = *ptro + 5;
+        *ptro = *ptro * 3;
+        *ptro = *ptro - 10;
+        cout << *ptro << endl;
+        cout << ptro;
 
-    int dinheiro = 50;
-    aumentar(&dinheiro);
-    cout << dinheiro;
-    
+        int numero1 = 10;
+        int numero2 = 15;
+        int *ptro0 = &numero1;
+        int *ptro1 = &numero2;
+        *ptro0 = *ptro0 + *ptro1;
+        *ptro1 = *ptro1 * 2;
+        cout << *ptro0 << endl;
+        cout << *ptro1 << endl;
 
-    int preco = 100;
-    desconto(&preco);
-    cout << preco;
+
+        int dinheiro = 50;
+        aumentar(&dinheiro);
+        cout << dinheiro;
+
+
+        int preco = 100;
+        desconto(&preco);
+        cout << preco;
+
+    int a = 20;
+    int b = 5;
+    modificar(&a, &b);
+    cout << a << endl;
+    cout << b << endl;
     */
-   int a = 20;
-   int b = 5;
-   modificar(&a, &b);
-   cout << a << endl;
-   cout << b << endl;
-     return 0;
+
+    int a = 5;
+    int b = 20;
+    int c = 3;
+    att(&a, &b, &c);
+    cout << a << endl;
+    cout << b << endl;
+    cout << c << endl;
+    return 0;
 }
