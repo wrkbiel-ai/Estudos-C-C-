@@ -71,6 +71,16 @@ void att(int *p1, int *p2, int *p3) {
 *p2 = *p2 - *p1;
 *p3 = *p3 + *p2;
 }
+void modifi(int *p1, int *p2, int *p3) {
+
+*p1 = *p1 + 20;
+*p2 = *p2 * 2;
+*p3 = *p3 - *p1;
+*p1 = *p1 + *p2;
+*p3 = *p3 * 2;
+
+
+}
 int main()
 {
     /*
@@ -155,7 +165,7 @@ int main()
     modificar(&a, &b);
     cout << a << endl;
     cout << b << endl;
-    */
+    
 
     int a = 5;
     int b = 20;
@@ -164,5 +174,13 @@ int main()
     cout << a << endl;
     cout << b << endl;
     cout << c << endl;
+    */
+   int a = 15;
+   int b = 10;
+   int c = 50;
+   modifi(&a, &b, &c);
+   cout << a << endl;
+   cout << b << endl;
+   cout << c << endl;
     return 0;
 }
