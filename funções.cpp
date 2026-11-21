@@ -105,7 +105,7 @@ int main()
     else
     {
 
-        cout << "Seu numero eh impar";
+        cout << "Seu numero eh impar" << endl;
     }
 
     int num;
@@ -129,7 +129,6 @@ int main()
     }
     mostrarDadosdb(6);
     mostrarDadoqd(4);
-
     cout << somar(5, 10) << endl;
     cout << somar(5, 10, 15) << endl;
     cout << somar(2.50, 5.50, 7.50) << endl;
