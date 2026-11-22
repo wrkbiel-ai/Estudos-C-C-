@@ -165,6 +165,14 @@ int main()
                     }
                     break;
                 }
+                case 5:
+                cout << "Escolha uma das opcoes de celular:" << endl;
+                cout << "1- Poco X7 Pro | 2000$ " << endl;
+                cout << "1- Oppoa alguma coisa Pro | 2000$ " << endl;
+                cout << "3- Samsung S26 | 5000$ " << endl;
+                cout << "4- Iphone 17 Pro Max | 6000$ " << endl;
+
+                break;
                 break;
             }
 
