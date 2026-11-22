@@ -68,8 +68,8 @@ int main()
                 totalgasto += 45;
             }
             break;
-            case 2:
-            
+        case 2:
+
             if (saldo < 250)
             {
                 cout << "Saldo insuficiente." << endl;
@@ -82,17 +82,67 @@ int main()
                 totalgasto += 250;
             }
             break;
-            case 3:
-            if (saldo < 850) { 
-                cout << "Saldo insuficiente para a compra do mes, vai ficar com fome" << endl;   
+        case 3:
+            if (saldo < 850)
+            {
+                cout << "Saldo insuficiente para a compra do mes, vai ficar com fome" << endl;
                 cout << "Adicione mais saldo a sua conta." << endl;
-
             }
-            else if (saldo >= 850) {
+            else if (saldo >= 850)
+            {
 
                 cout << "Compra do mes realizada!" << endl;
             }
             break;
+        case 4:
+            cout << "1- Lenovo LOQ - 5500$" << endl;
+            cout << "2- Acer Nitro V - 5800$" << endl;
+            cout << "3- Asus TUF Gaming - 6100$" << endl;
+            cout << "4- Dell G15 - 5500$" << endl;
+            int note;
+            cout << "Escolha a sua opcao" << endl;
+            cin >> note;
+            switch (note)
+            {
+            case 1:
+                if (saldo < 5500)
+                {
+                    cout << "Saldo insuficiente para comprar o Lenovo Loq" << endl;
+                    cout << "Saldo insuficiente para comprar o Lenovo Loq" << endl;
+                    cout << "Saldo insuficiente para comprar o Lenovo Loq" << endl;
+                    cout << "Adicione mais saldo a sua conta." << endl;
+                    cout << "Adicione mais saldo a sua conta." << endl;
+                    cout << "Adicione mais saldo a sua conta." << endl;
+                }
+                else if (saldo >= 5500)
+                {
+
+                    cout << "Compra realizada com sucesso, seu Lenovo LOQ está a caminho!" << endl;
+                    cout << "Compra realizada com sucesso, seu Lenovo LOQ está a caminho!" << endl;
+                    cout << "Compra realizada com sucesso, seu Lenovo LOQ está a caminho!" << endl;
+                    cout << "Prazo de entrega: 20 Dias" << endl;
+                    cout << "Prazo de entrega: 20 Dias" << endl;
+                    cout << "Prazo de entrega: 20 Dias" << endl;
+                }
+                break;
+                
+                case 2:
+                if (saldo < 5800)
+                {
+                    
+                    cout << "Saldo insuficiente para comprar o Acer Nitro V." << endl;
+                    cout << "Adicione mais saldo a sua conta." << endl;
+                }
+                else if(saldo >=5800) {
+                    
+                    cout << "Compra realizada com sucesso, seu Acer Nitro V está a caminho!" << endl;
+                    cout << "Prazo de entrega: 20 Dias" << endl;
+
+
+                }
+
+                break;
+            }
         }
 
         cout << "Deseja repetir o dashboard financeiro? 1- Sim | 0- Não" << endl;
