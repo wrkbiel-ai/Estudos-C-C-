@@ -4,11 +4,12 @@ int main(void)
 {
     string palavra;
     cin >> palavra;
-    char letra;
+    /*char letra;
     cin >> letra;
     int contador = 0;
     string letras = "AEIOUaeiou";
     int vogais = 0;
+
     for (int i = 0; i < palavra.size(); i++)
     {
         if (letras.find(palavra[i]) != string::npos)
@@ -25,4 +26,10 @@ int main(void)
     }
     cout << palavra.size() << endl;
     cout << contador << endl;
+
+ */
+    for (int i = palavra.size() - 1; i >= 0; i--)
+    {
+        cout << palavra[i];
+    }
 }
