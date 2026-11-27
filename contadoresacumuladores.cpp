@@ -72,30 +72,31 @@ for (int i = 1; i <=10; i++) {
        cin >> n2;
        if (n2 % 2 == 0)  {
         par++;
-        
+
         }
         }
         cout << "Essa foi a quantidade de numeros pares: " << par << endl;
         */
-       int primos = 0;
-       int n;
-    
-       cout << "Numeros primos" << endl;
-       for (int i = 1; i <=10; i++) {
+    int primos = 0;
+    int n;
+    cout << "Numeros primos" << endl;
+    for (int i = 1; i <= 10; i++)
+    {
         cout << "Digite um numero " << i << endl;
         cin >> n;
         int divisores = 0;
-        for (int j = 1; j <= n; j++) {
-            if (n % i == 0) {
-            divisores++;
-
+        for (int j = 1; j <= n; j++)
+        {
+            if (n % i == 0)
+            {
+                divisores++;
+            }
+            if (divisores == 2)
+            {
+                primos++;
+            }
         }
-        if (divisores == 2) {
-            primos++;
-        }
-        }
-
-        }
-        cout << "A quantidade de numeros primos e: " << primos << endl;
+    }
+    cout << "A quantidade de numeros primos e: " << primos << endl;
     return 0;
 }
